@@ -31,11 +31,18 @@
                                 <rect key="frame" x="80" y="175" width="215" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="daN-vP-KRw" customClass="MyTextField" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="80" y="225" width="215" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="daN-vP-KRw" firstAttribute="leading" secondItem="bsh-Pw-JxO" secondAttribute="leading" id="85N-HY-7v4"/>
                             <constraint firstItem="6YK-L8-bVq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="90V-ub-Ol2"/>
                             <constraint firstItem="bsh-Pw-JxO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="9yx-xQ-Px0"/>
                             <constraint firstItem="hiH-UF-kgp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KDC-Mw-oTu"/>
@@ -45,9 +52,15 @@
                             <constraint firstItem="hiH-UF-kgp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="feR-xi-bEH"/>
                             <constraint firstItem="6YK-L8-bVq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hHs-hX-KnU"/>
                             <constraint firstItem="bsh-Pw-JxO" firstAttribute="top" secondItem="6YK-L8-bVq" secondAttribute="bottom" constant="35" id="ns4-UB-p49"/>
+                            <constraint firstItem="daN-vP-KRw" firstAttribute="trailing" secondItem="bsh-Pw-JxO" secondAttribute="trailing" id="qNE-zh-MUi"/>
+                            <constraint firstItem="daN-vP-KRw" firstAttribute="top" secondItem="bsh-Pw-JxO" secondAttribute="bottom" constant="20" id="qir-vf-hcY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="priceText" destination="daN-vP-KRw" id="WJe-Zk-cx2"/>
+                        <outlet property="wageText" destination="bsh-Pw-JxO" id="17o-d4-wcq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
