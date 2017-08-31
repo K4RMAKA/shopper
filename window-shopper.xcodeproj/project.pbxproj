@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		0067D42D1F58767E009CE633 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0067D42C1F58767E009CE633 /* AppDelegate.swift */; };
-		0067D42F1F58767E009CE633 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0067D42E1F58767E009CE633 /* ViewController.swift */; };
+		0067D42F1F58767E009CE633 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0067D42E1F58767E009CE633 /* MainVC.swift */; };
 		0067D4321F58767E009CE633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0067D4301F58767E009CE633 /* Main.storyboard */; };
 		0067D4341F58767E009CE633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0067D4331F58767E009CE633 /* Assets.xcassets */; };
 		0067D4371F58767E009CE633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0067D4351F58767E009CE633 /* LaunchScreen.storyboard */; };
+		0067D4421F587AAD009CE633 /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0067D4411F587AAD009CE633 /* MyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0067D4291F58767E009CE633 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0067D42C1F58767E009CE633 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0067D42E1F58767E009CE633 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0067D42E1F58767E009CE633 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		0067D4311F58767E009CE633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0067D4331F58767E009CE633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0067D4361F58767E009CE633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0067D4381F58767E009CE633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0067D4411F587AAD009CE633 /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		0067D42B1F58767E009CE633 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				0067D4401F587A81009CE633 /* Model */,
+				0067D43F1F587A7B009CE633 /* View */,
+				0067D43E1F587A4B009CE633 /* Controller */,
 				0067D42C1F58767E009CE633 /* AppDelegate.swift */,
-				0067D42E1F58767E009CE633 /* ViewController.swift */,
 				0067D4301F58767E009CE633 /* Main.storyboard */,
 				0067D4331F58767E009CE633 /* Assets.xcassets */,
 				0067D4351F58767E009CE633 /* LaunchScreen.storyboard */,
 				0067D4381F58767E009CE633 /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		0067D43E1F587A4B009CE633 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0067D42E1F58767E009CE633 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0067D43F1F587A7B009CE633 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0067D4411F587AAD009CE633 /* MyTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0067D4401F587A81009CE633 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0067D42F1F58767E009CE633 /* ViewController.swift in Sources */,
+				0067D4421F587AAD009CE633 /* MyTextField.swift in Sources */,
+				0067D42F1F58767E009CE633 /* MainVC.swift in Sources */,
 				0067D42D1F58767E009CE633 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
